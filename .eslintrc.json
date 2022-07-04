@@ -1,0 +1,36 @@
+{
+    "extends": [
+        "airbnb-base",
+        "plugin:node/recommended",
+        "plugin:security/recommended"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 2020
+    },
+	"plugins": [
+		"require-sort"
+	],
+    "env": {
+      },
+    "rules": {
+		"import/order": 0,
+	    "require-sort/require-sort": "error",
+	    "no-console": 0,
+		"arrow-parens": ["error", "always"],
+		"indent": ["error", "tab"],
+		"no-plusplus" : 0,
+		"no-tabs": ["error", {"allowIndentationTabs": true}],
+        "object-curly-newline": 0,
+        "max-len": ["error", {
+            "code": 120,
+            "ignoreComments": true,
+            "ignoreTemplateLiterals": true,
+            "ignoreStrings":  true
+        }],
+		"no-throw-literal": 0,
+        "no-restricted-syntax": 0,
+        "no-underscore-dangle": ["error", { "allow": ["_id"] }],
+        "security/detect-non-literal-fs-filename": 0,
+		"security/detect-object-injection": 0
+    }
+}

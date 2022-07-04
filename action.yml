@@ -1,0 +1,14 @@
+name: All reviewers approve
+description: Ensure all reviewers have approved this PR
+inputs:
+  pr:
+    description: "PR number"
+    required: true
+  github-token:
+    description: 'access token to do github requests'
+    required: true
+
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
+
