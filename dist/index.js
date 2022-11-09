@@ -9757,7 +9757,7 @@ const run = async () => {
 	}
 
 	if (waitingOnReviews) throw new Error('Not all reviewers have approved this PR');
-
+	core.setOutput('approved', true);
 	console.log('All reviewers have approved');
 };
 run().catch((err) => {
